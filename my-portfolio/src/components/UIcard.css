@@ -1,0 +1,11 @@
+.ui-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #6a3ace;
+    border-radius: 36px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    /*cursor: pointer;*/
+}

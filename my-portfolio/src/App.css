@@ -1,0 +1,40 @@
+body {
+    background: #0B0B0B;
+    color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 900vh;
+
+}
+
+.App {
+    position: relative;
+    margin-top: 70px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 2px solid white;
+    margin: 20px auto; /* Adjust the margin as needed */
+    width: 80.8%; /* Adjust the width as needed */
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border: 2px solid white; /* White border */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3); /* 30% white opacity */
+    pointer-events: none; /* Make sure the cursor does not block interactions */
+    z-index: 1000; /* Make sure it's above other elements */
+    transform: translate(-50%, -50%); /* Center the circle on the cursor */
+}
+
