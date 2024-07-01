@@ -5,6 +5,7 @@ import ArrowIconGreen from "../icons/ArrowIconGreen";
 import JobComponent from "./JobComponent";
 import ArrowIconWhite from "../icons/ArrowIconWhite";
 import Tiles from "../icons/Tiles";
+import BrokenTextBoxComponent from "./BrokenTextBoxComponent";
 
 const MiddlePage: React.FC = () => {
   const jobDescription1 = `
@@ -151,7 +152,10 @@ const MiddlePage: React.FC = () => {
 
       <div className="horizontal-container-3">
         <TextBoxComponent title="CONTACTS" size="big" />
-        <div className="text-content-contacts">
+        <TextBoxComponent title="ABOUT ME" size="big" />
+      </div>
+      <div className="text-content-contacts">
+        <div>
           <div className="contact-item gap-50px">
             <span className="letter-spacing-wide" style={{ color: "#55E27D" }}>
               Behance:
@@ -177,7 +181,39 @@ const MiddlePage: React.FC = () => {
             </span>
           </div>
         </div>
+        <div className="click-to-view-text-1 underline">
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+        </div>
+        <div className="click-to-view-text-2 underline">
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+        </div>
+        <div className="click-to-view-text-3 underline">
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+          <div className="text-content-about-me"> CLICK TO VIEW</div>
+        </div>
       </div>
+
+      <BrokenTextBoxComponent />
     </div>
   );
 };

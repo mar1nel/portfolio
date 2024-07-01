@@ -23,17 +23,18 @@
 
 .text-content-contacts {
     display: flex;
-    flex-direction: column;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18.2%;
     gap: 5px;
+    flex-direction: row;
 }
 
 .horizontal-container-3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 17%;
     margin-top: 50px;
+    gap: 400px;
 }
 
 .contact-item {
@@ -122,4 +123,25 @@
     margin-left: 17%;
     margin-top: 30px;
     max-width: 1280px;
+}
+
+.click-to-view-text-1 {
+    font-size: 14px;
+    margin-left: 29.5%;
+    color: #55E27D;
+
+}
+
+.click-to-view-text-2 {
+    font-size: 14px;
+    margin-left: 2%;
+    color: #55E27D;
+
+}
+
+.click-to-view-text-3 {
+    font-size: 14px;
+    margin-left: 2%;
+    color: #55E27D;
+
 }

@@ -7,10 +7,11 @@ import CustomCursor from "./components/CustomCursor";
 import MiddlePage from "./components/MiddlePage";
 
 const App = () => {
+  const imageUrl = `${process.env.PUBLIC_URL}/assets/gradient-mid.png`;
+  console.log("Image URL:", imageUrl);
   return (
     <div className="App">
       <CustomCursor />
-
       <BorderSVG />
       <Navbar />
       <div className="center-container">
@@ -18,6 +19,7 @@ const App = () => {
       </div>
       <hr className="horizontal-line" />
       <MiddlePage />
+      <img src={imageUrl} alt="Gradient" className="gradient-image" />
     </div>
   );
 };

@@ -5,10 +5,12 @@ const BorderSVG = () => {
     <div
       style={{
         position: "absolute",
+        // background: "red",
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
         height: "100%",
+        zIndex: 1,
       }}
     >
       <svg
