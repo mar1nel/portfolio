@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 2300) {
+      if (scrollY > 2350) {
         setGradientOpacity(1);
       } else {
         setGradientOpacity(0);
@@ -46,7 +46,7 @@ const App = () => {
           className="gradient-image"
           style={{
             opacity: gradientOpacity,
-            transition: "opacity 3s ease-in-out",
+            transition: "opacity 2.5s ease-in-out",
           }}
         />
         <WarningComponent1 />
