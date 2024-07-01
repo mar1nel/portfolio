@@ -1,25 +1,47 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 
 const CustomCursor: React.FC = () => {
-  const cursorRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${event.clientX}px`;
-        cursorRef.current.style.top = `${event.clientY}px`;
+    const cursor = document.querySelector(".custom-cursor");
+
+    const moveCursor = (e: MouseEvent) => {
+      if (cursor) {
+        cursor.setAttribute(
+          "style",
+          `top: ${e.clientY}px; left: ${e.clientX}px;`,
+        );
       }
     };
 
-    document.addEventListener("mousemove", handleMouseMove);
+    const addGrowClass = () => {
+      if (cursor) {
+        cursor.classList.add("grow");
+      }
+    };
+
+    const removeGrowClass = () => {
+      if (cursor) {
+        cursor.classList.remove("grow");
+      }
+    };
+
+    document.addEventListener("mousemove", moveCursor);
+    document.querySelectorAll(".hover-target").forEach((el) => {
+      el.addEventListener("mouseover", addGrowClass);
+      el.addEventListener("mouseout", removeGrowClass);
+    });
 
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mousemove", moveCursor);
+      document.querySelectorAll(".hover-target").forEach((el) => {
+        el.removeEventListener("mouseover", addGrowClass);
+        el.removeEventListener("mouseout", removeGrowClass);
+      });
     };
   }, []);
 
-  return <div ref={cursorRef} className="custom-cursor"></div>;
+  return <div className="custom-cursor"></div>;
 };
 
 export default CustomCursor;

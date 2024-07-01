@@ -1,9 +1,14 @@
 body {
     background: #0B0B0B;
+    cursor: none;
     color: white;
     margin: 0;
     font-family: 'Inter', sans-serif;
     height: 900vh;
+}
+
+* {
+    cursor: none; 
 }
 
 .App {
@@ -33,8 +38,13 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
-    z-index: 1000;
+    z-index: 1001;
     transform: translate(-50%, -50%);
+}
+
+.custom-cursor.grow {
+    width: 50px;
+    height: 50px;
 }
 
 .text-box {

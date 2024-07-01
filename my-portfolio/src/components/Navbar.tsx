@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-scroll";
 import ArrowIcon from "../icons/ArrowIcon";
 import PolygonIcon from "../icons/PolygonIcon";
 import RectangleIcon from "../icons/RectangleIcon";
 import EllipseIcon from "../icons/EllipseIcon";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -35,28 +37,49 @@ const Navbar = () => {
             flex: 1,
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a href="#about" style={{ textDecoration: "none", color: "white" }}>
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1200}
+              className="navbar-link1"
+            >
               ABOUT ME
-            </a>
+            </Link>
             <EllipseIcon />
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a
-              href="#portfolio"
-              style={{ textDecoration: "none", color: "white" }}
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar-link2"
             >
               PORTFOLIO
-            </a>
+            </Link>
             <RectangleIcon />
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a
-              href="#projects"
-              style={{ textDecoration: "none", color: "white" }}
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar-link3"
             >
               PROJECTS
-            </a>
+            </Link>
             <PolygonIcon />
           </div>
         </div>
@@ -73,28 +96,49 @@ const Navbar = () => {
             justifyContent: "flex-end",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a
-              href="#telegram"
-              style={{ textDecoration: "none", color: "white" }}
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="telegram"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar-link4"
             >
               TELEGRAM
-            </a>
+            </Link>
             <ArrowIcon />
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a href="#wapp" style={{ textDecoration: "none", color: "white" }}>
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="wapp"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar-link5"
+            >
               WHATSAPP
-            </a>
+            </Link>
             <ArrowIcon />
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <a
-              href="#instagram"
-              style={{ textDecoration: "none", color: "white" }}
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            className="hover-target"
+          >
+            <Link
+              to="instagram"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="navbar-link6"
             >
               INSTAGRAM
-            </a>
+            </Link>
             <ArrowIcon />
           </div>
         </div>

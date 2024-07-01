@@ -10,7 +10,7 @@ const BorderSVG = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
         height: "100%",
-        zIndex: 1,
+        // zIndex: 1,
       }}
     >
       <svg

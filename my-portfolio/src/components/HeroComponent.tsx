@@ -17,7 +17,7 @@ const HeroComponent = () => {
         </p>
       </div>
 
-      <div className="hero-item hero-item-2">
+      <div className=" hover-target hero-item hero-item-2 ">
         <UICard />
       </div>
 

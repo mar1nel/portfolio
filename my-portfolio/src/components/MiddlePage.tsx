@@ -37,7 +37,7 @@ const MiddlePage: React.FC = () => {
             <TextBoxComponent title="TOOLS" />
           </div>
 
-          <div className="tile-over">
+          <div id="about" className="tile-over">
             <Tiles />
           </div>
 
@@ -152,7 +152,9 @@ const MiddlePage: React.FC = () => {
 
       <div className="horizontal-container-3">
         <TextBoxComponent title="CONTACTS" size="big" />
-        <TextBoxComponent title="ABOUT ME" size="big" />
+        <div>
+          <TextBoxComponent title="ABOUT ME" size="big" />
+        </div>
       </div>
       <div className="text-content-contacts">
         <div>

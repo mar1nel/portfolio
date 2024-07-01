@@ -1,0 +1,28 @@
+.navbar-link1,.navbar-link2,.navbar-link3, .navbar-link4, .navbar-link5, .navbar-link6  {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    z-index: 2;
+}
+
+.navbar-link1:hover {
+    color: #55e27d;
+}
+.navbar-link2:hover {
+    color: #684BB7;
+}
+.navbar-link3:hover {
+    color: #EE1B00;
+}
+.navbar-link4:hover {
+    color: #EE1B00;
+}
+.navbar-link5:hover {
+    color: #EE1B00;
+}
+.navbar-link6:hover {
+    color: #EE1B00;
+}
+.hover-target {
+    cursor: pointer;
+}
