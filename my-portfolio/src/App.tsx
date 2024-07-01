@@ -3,8 +3,8 @@ import "./App.css";
 import BorderSVG from "./components/BorderSvg";
 import Navbar from "./components/Navbar";
 import HeroComponent from "./components/HeroComponent";
-import UICard from "./components/UICard";
 import CustomCursor from "./components/CustomCursor";
+import MiddlePage from "./components/MiddlePage";
 
 const App = () => {
   return (
@@ -16,8 +16,8 @@ const App = () => {
       <div className="center-container">
         <HeroComponent />
       </div>
-
       <hr className="horizontal-line" />
+      <MiddlePage />
     </div>
   );
 };

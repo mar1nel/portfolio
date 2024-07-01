@@ -21,8 +21,8 @@ const QuoteComponent: React.FC = () => {
       const faceX = left + width / 2;
       const faceY = top + height / 2;
 
-      const offsetX = Math.min(Math.max((clientX - faceX) / 20, -5), 5);
-      const offsetY = Math.min(Math.max((clientY - faceY) / 20, -5), 5);
+      const offsetX = Math.min(Math.max((clientX - faceX) / 20, -8), 5);
+      const offsetY = Math.min(Math.max((clientY - faceY) / 20, -8), 5);
 
       eyes.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
       mouth.style.transform = `translate(${offsetX}px, ${offsetY}px)`;

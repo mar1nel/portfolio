@@ -1,0 +1,32 @@
+.job-container {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #55E27D;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.job-role-date {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.job-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.arrow-spacing-job {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 3px;
+}

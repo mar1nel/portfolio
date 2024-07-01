@@ -3,9 +3,9 @@ import "./HeroComponent.css";
 import UICard from "./UICard";
 import TechCard from "./TechCard";
 import QuoteComponent from "./QuoteComponent";
-import Star11 from "../icons/stars/Star11";
 import StarRed from "../icons/StarRed";
 import AnimatedStars from "./AnimatedStars";
+import Tiles from "../icons/Tiles";
 
 const HeroComponent = () => {
   return (
@@ -34,10 +34,10 @@ const HeroComponent = () => {
           About this Portfolio Website:
         </h2>
         <p>
-          "This page is a digital version of my resume and CV, it was done from
+          This page is a digital version of my resume and CV, it was done from
           zero and from scratch, moreover it was designed in Figma by me in 2021
           and forgotten till in 2024. I’ll leave it open-source if anyone would
-          like to use it in their portfolios."
+          like to use it in their portfolios.
         </p>
       </div>
 
@@ -48,6 +48,9 @@ const HeroComponent = () => {
           </div>
           <AnimatedStars />
         </div>
+      </div>
+      <div className="grid">
+        <Tiles />
       </div>
     </div>
   );

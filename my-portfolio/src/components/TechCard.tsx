@@ -30,7 +30,7 @@ const TechCard: React.FC = () => {
           )}
         </AnimatePresence>
         <div className="relative text-center text-[#55e27d]">
-          <p className="absolute -mt-4 -ml-4 text-5xl font-bold group-hover:text-[#78FF9DFF] transition duration-500">
+          <p className="absolute -mt-4 -ml-4 text-5xl font-bold group-hover:text-[#b0ffc5] transition duration-500">
             ReactJS
           </p>
           <p className="text-2xl mt-16 indent-1 leading-tight">

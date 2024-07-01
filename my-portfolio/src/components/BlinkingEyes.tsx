@@ -10,8 +10,8 @@ const BlinkingEyes: React.FC = () => {
       setBlink(true);
       setTimeout(() => {
         setBlink(false);
-      }, 500);
-    }, 5000);
+      }, 200);
+    }, 4500);
 
     return () => clearInterval(blinkInterval);
   }, []);

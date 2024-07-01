@@ -60,3 +60,10 @@ body {
     left: calc(50% + 10px);
     /*background-color: #1b1b1b;*/
 }
+
+.grid {
+    position: absolute;
+    width: 56%;
+    height: 800px;
+    left: calc(42%);
+}

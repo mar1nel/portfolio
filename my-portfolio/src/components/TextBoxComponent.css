@@ -1,0 +1,47 @@
+.text-box {
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    transition: width 0.3s ease;
+}
+
+.text-box.small {
+    width: 200px;
+}
+
+.text-box.medium {
+    width: 300px;
+}
+
+.text-box.large {
+    width: 400px;
+}
+
+.text-box.big {
+    width: 420px;
+}
+
+.text-box.supreme {
+    width: 1280px;
+}
+
+.text-box h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.text-box p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.text-box a {
+    color: green;
+    text-decoration: none;
+}
+
+.text-box a:hover {
+    text-decoration: underline;
+}
