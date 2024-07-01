@@ -69,7 +69,6 @@ body {
     display: block;
     margin-left: 4%;
     margin-top: 10%;
-    /*z-index: 2;*/
 }
 
 @keyframes fadeIn {
@@ -77,3 +76,4 @@ body {
         opacity: 1;
     }
 }
+
