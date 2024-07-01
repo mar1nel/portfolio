@@ -24,8 +24,8 @@ const OKButton: React.FC<{ text?: string }> = ({ text = "OK" }) => (
       width="200"
       height="35"
       stroke="black"
-      stroke-opacity="0.5"
-      stroke-dasharray="2 3"
+      strokeOpacity="0.5"
+      strokeDasharray="2 3"
     />
     <text
       x="50%"
@@ -47,8 +47,8 @@ const OKButton: React.FC<{ text?: string }> = ({ text = "OK" }) => (
         y2="45"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#D0CEC3" />
-        <stop offset="1" stop-color="#C1BFB4" />
+        <stop stopColor="#D0CEC3" />
+        <stop offset="1" stopColor="#C1BFB4" />
       </linearGradient>
     </defs>
   </svg>

@@ -14,7 +14,7 @@ const ArrowIconGreen = () => (
       y2="-0.75"
       transform="matrix(0.726468 -0.6872 0.726468 0.6872 2 12.3513)"
       stroke="#55E27D"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
     <line
       x1="3.33331"
@@ -22,7 +22,7 @@ const ArrowIconGreen = () => (
       x2="13.3333"
       y2="0.880615"
       stroke="#55E27D"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
     <line
       x1="12.5833"
@@ -30,7 +30,7 @@ const ArrowIconGreen = () => (
       x2="12.5833"
       y2="0.99989"
       stroke="#55E27D"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
   </svg>
 );

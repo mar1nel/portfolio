@@ -8,6 +8,7 @@ import MiddlePage from "./components/MiddlePage";
 import WarningComponent1 from "./components/WarningComponent1";
 import WarningComponent2 from "./components/WarningComponent2";
 import Globe from "./components/Globe";
+import LineDraw from "./components/LineDraw";
 
 const App = () => {
   const [gradientOpacity, setGradientOpacity] = useState(0);
@@ -54,6 +55,8 @@ const App = () => {
         <div style={{ marginTop: 550, marginLeft: 330 }}>
           <Globe />
         </div>
+
+        {/*<LineDraw />*/}
       </div>
     </div>
   );

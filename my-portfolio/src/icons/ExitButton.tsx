@@ -38,7 +38,7 @@ const ExitButton: React.FC<SVGProps<SVGSVGElement>> = (props) => (
         y2="23.4142"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0.51" />
+        <stop stopOpacity="0.51" />
         <stop offset="1" />
       </linearGradient>
       <linearGradient
@@ -49,7 +49,7 @@ const ExitButton: React.FC<SVGProps<SVGSVGElement>> = (props) => (
         y2="22"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0.51" />
+        <stop stopOpacity="0.51" />
         <stop offset="1" />
       </linearGradient>
     </defs>
