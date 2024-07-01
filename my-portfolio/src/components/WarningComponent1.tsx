@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./WarningComponent.css";
+import "./WarningComponent1.css";
 import OKButton from "../icons/OKButton";
 import ExitButton from "../icons/ExitButton";
 
-const WarningComponent: React.FC = () => {
+const WarningComponent1: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [textIndex, setTextIndex] = useState(0);
 
   const texts = [
-    "Please exit this website as soon as possible, I really don't take any responsibility if your machine will stop functioning... lol",
-    "This is your second warning, leave now, or be ready to lose all your saved passwords keys! >:)",
-    "You got me, this is a conditionaly rendered animated component that it's just looking kind of cool :))",
+    "So you tried to read this text over there? Cool, I guess... If you ask, I'm watching Prison Break right now. Strong 8/10 rate from me.",
+    "It's like 5AM and I don't even feel tired or bothered, coding this website really heals the inner me. I love it.",
+    "─────▄▄────▄▀▀█▀▀▀▀▄\n " +
+      "──▄▀▀──▀▀▄▄█▄▄█────█\n" +
+      "▄▀─────────█──█────█\n" +
+      "────────────▀▀▀▀▀▀▀\n",
   ];
 
   const handleClose = () => {
@@ -27,7 +30,7 @@ const WarningComponent: React.FC = () => {
 
   return (
     <motion.div
-      className={`warning-box ${isVisible ? "visible" : "hidden"}`}
+      className={`warning-box1 ${isVisible ? "visible" : "hidden"}`}
       initial={{ opacity: 0, y: 200 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 200 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -35,21 +38,21 @@ const WarningComponent: React.FC = () => {
         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/base-window.png)`,
       }}
     >
-      <div className="warning-header ">
-        <span>Error: the page is broken! 0xF100</span>
+      <div className="warning-header1 ">
+        <span>Error: The page is broken! 0xR211</span>
         <motion.div
-          className="close-button hover-target"
+          className="close-button1 hover-target"
           whileTap={{ scale: 0.9 }}
           onClick={handleClose}
         >
           <ExitButton />
         </motion.div>
       </div>
-      <div className="warning-content">
+      <div className="warning-content1">
         <p>{texts[textIndex]}</p>
       </div>
       <motion.div
-        className="ok-button hover-target"
+        className="ok-button1 hover-target"
         whileTap={{ scale: 0.9 }}
         onClick={handleButtonClick}
       >
@@ -59,4 +62,4 @@ const WarningComponent: React.FC = () => {
   );
 };
 
-export default WarningComponent;
+export default WarningComponent1;
