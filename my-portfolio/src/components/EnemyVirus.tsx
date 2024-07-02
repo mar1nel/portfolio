@@ -9,7 +9,7 @@ const EnemyVirus: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 1800 && scrollY < 2250) {
+      if (scrollY > 1500 && scrollY < 2050) {
         setShowImages(true);
         setStartAnimation(true);
       } else {

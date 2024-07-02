@@ -13,11 +13,28 @@ import EnemyVirus from "./components/EnemyVirus";
 
 const App = () => {
   const [gradientOpacity, setGradientOpacity] = useState(0);
+  const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 2350) {
+      if (scrollY > 2700) {
+        setStartAnimation(true);
+      } else {
+        setStartAnimation(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 2550) {
         setGradientOpacity(1);
       } else {
         setGradientOpacity(0);
@@ -56,9 +73,17 @@ const App = () => {
         <div style={{ marginTop: 550, marginLeft: 330 }}>
           <Globe />
         </div>
-
-        {/*<LineDraw />*/}
+        <div
+          className={`broken-message-container ${
+            startAnimation ? "animate__animated animate__tada" : ""
+          }`}
+        >
+          <h1>
+            OH NO, WEBSITE IS <br /> <span className="broken">BROKEN</span>??!
+          </h1>
+        </div>
         <EnemyVirus />
+        {/*<LineDraw />*/}
       </div>
     </div>
   );

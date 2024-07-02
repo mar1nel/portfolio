@@ -77,3 +77,20 @@ body {
     }
 }
 
+.broken-message-container {
+    color: white;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 17%;
+}
+
+.broken-message-container h1 {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.broken-message-container .broken {
+    background: linear-gradient(90deg, #68ee8d 0%, #34b656 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
