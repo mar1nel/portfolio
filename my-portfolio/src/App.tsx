@@ -9,6 +9,7 @@ import WarningComponent1 from "./components/WarningComponent1";
 import WarningComponent2 from "./components/WarningComponent2";
 import Globe from "./components/Globe";
 import LineDraw from "./components/LineDraw";
+import EnemyVirus from "./components/EnemyVirus";
 
 const App = () => {
   const [gradientOpacity, setGradientOpacity] = useState(0);
@@ -57,6 +58,7 @@ const App = () => {
         </div>
 
         {/*<LineDraw />*/}
+        <EnemyVirus />
       </div>
     </div>
   );
