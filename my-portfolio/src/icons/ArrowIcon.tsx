@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowIcon = () => (
+const ArrowIcon = ({ color = "#EE1B00" }) => (
   <svg
     width="19"
     height="19"
@@ -13,23 +13,16 @@ const ArrowIcon = () => (
       y1="18.4697"
       x2="18.4402"
       y2="1.49911"
-      stroke="#EE1B00"
+      stroke={color}
       strokeWidth="1.5"
     />
-    <line
-      x1="4"
-      y1="1.25"
-      x2="19"
-      y2="1.25"
-      stroke="#EE1B00"
-      strokeWidth="1.5"
-    />
+    <line x1="4" y1="1.25" x2="19" y2="1.25" stroke={color} strokeWidth="1.5" />
     <line
       x1="18.25"
       y1="16"
       x2="18.25"
       y2="1"
-      stroke="#EE1B00"
+      stroke={color}
       strokeWidth="1.5"
     />
   </svg>

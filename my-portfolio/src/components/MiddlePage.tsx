@@ -17,8 +17,7 @@ const MiddlePage: React.FC = () => {
   `;
 
   const jobDescription2 = `
-    As a Website Administrator and Product Designer at VelloTerra and SmartBaby, I was responsible for maintaining and also updating the company's website, as well as creating product designs, 
-    promotion banners, mock‑ups to showcase on the site. Redesigned Ui along with adding new functions resulted abandonment rate decreasing by 25-30% in 1 month.
+    Our team developed a robust web-based video player that provides a seamless and high-quality video playback experience. The video player includes features such as play, pause, forward, rewind, volume control, and full-screen mode. The application is designed to be intuitive and user-friendly, ensuring that users can easily navigate and enjoy their video content.
     `;
 
   const jobDescription3 = `
@@ -127,26 +126,26 @@ const MiddlePage: React.FC = () => {
 
       <div className="job">
         <JobComponent
-          company="Unifun"
-          role="UI/UX Designer"
-          date="| Jun 2021 - Oct 2022"
-          description={jobDescription1}
+          company="TheTalented CO"
+          role="Junior FE Developer & Manual/Automation Tester"
+          date="| Jul 2023 - Nov 2023 | NY, USA - remote"
+          description={jobDescription3}
         />
       </div>
       <div className="job">
         <JobComponent
-          company="SmartBaby"
-          role="Product Designer"
-          date="| 2017 - 2019"
+          company="Nokia"
+          role="Junior Web Developer"
+          date="| Dec 2022 - Feb 2023 | Timis, Romania - onsite"
           description={jobDescription2}
         />
       </div>
       <div className="job">
         <JobComponent
-          company="TheTalented CO"
-          role="Manual / Automation Tester & Developer"
-          date="| Jul 2023 - Nov 2023"
-          description={jobDescription3}
+          company="Unifun"
+          role="Junior User Interface Designer"
+          date="| Jun 2021 - Oct 2022 | Moldova - onsite"
+          description={jobDescription1}
         />
       </div>
 

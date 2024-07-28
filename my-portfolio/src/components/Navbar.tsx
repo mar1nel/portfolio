@@ -90,7 +90,7 @@ const Navbar = () => {
           style={{
             display: "flex",
             marginRight: "60px",
-            gap: "60px",
+            gap: "90px",
             padding: "15px",
             flex: 1,
             justifyContent: "flex-end",
@@ -109,7 +109,7 @@ const Navbar = () => {
             >
               TELEGRAM
             </Link>
-            <ArrowIcon />
+            <ArrowIcon color="#127fec" />
           </div>
           <div
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -122,9 +122,9 @@ const Navbar = () => {
               duration={500}
               className="navbar-link5"
             >
-              WHATSAPP
+              GITHUB
             </Link>
-            <ArrowIcon />
+            <ArrowIcon color="#da4c0f" />
           </div>
           <div
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -137,9 +137,9 @@ const Navbar = () => {
               duration={500}
               className="navbar-link6"
             >
-              INSTAGRAM
+              BEHANCE
             </Link>
-            <ArrowIcon />
+            <ArrowIcon color="#6537c3" />
           </div>
         </div>
       </div>
