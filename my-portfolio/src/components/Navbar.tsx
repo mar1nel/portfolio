@@ -10,12 +10,12 @@ const Navbar = () => {
   return (
     <nav
       style={{
-        marginLeft: "181px",
+        marginLeft: "9.8%",
         justifyContent: "space-between",
         alignItems: "center",
         color: "white",
         borderBottom: "2px solid white",
-        width: "1535px",
+        width: "80.5%",
         display: "flex",
       }}
     >
@@ -30,9 +30,9 @@ const Navbar = () => {
       >
         <div
           style={{
-            marginLeft: "60px",
+            marginLeft: "80px",
             display: "flex",
-            gap: "60px",
+            gap: "70px",
             padding: "15px",
             flex: 1,
           }}
@@ -48,7 +48,7 @@ const Navbar = () => {
               duration={1200}
               className="navbar-link1"
             >
-              ABOUT ME
+              ABOUT
             </Link>
             <EllipseIcon />
           </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div style={{ border: "1px solid white", height: "60px" }}></div>
+        <div style={{ border: "1px solid white", height: "65px" }}></div>
 
         <div
           style={{
@@ -100,45 +100,42 @@ const Navbar = () => {
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
             className="hover-target"
           >
-            <Link
-              to="telegram"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <a
+              href="https://t.me/disper228"
+              target="_blank"
+              rel="noopener noreferrer"
               className="navbar-link4"
             >
               TELEGRAM
-            </Link>
+            </a>
             <ArrowIcon color="#127fec" />
           </div>
           <div
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
             className="hover-target"
           >
-            <Link
-              to="wapp"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <a
+              href="https://github.com/mar1nel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="navbar-link5"
             >
               GITHUB
-            </Link>
+            </a>
             <ArrowIcon color="#da4c0f" />
           </div>
           <div
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
             className="hover-target"
           >
-            <Link
-              to="instagram"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <a
+              href="https://www.behance.net/ababiivicu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="navbar-link6"
             >
               BEHANCE
-            </Link>
+            </a>
             <ArrowIcon color="#6537c3" />
           </div>
         </div>

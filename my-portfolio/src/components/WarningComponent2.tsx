@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./WarningComponent2.css";
 import OKButton from "../icons/OKButton";
 import ExitButton from "../icons/ExitButton";
+import baseWindow from "../assets/base-window.png"; // Import the image
 
 const WarningComponent2: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -32,7 +33,7 @@ const WarningComponent2: React.FC = () => {
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 500 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/base-window.png)`,
+        backgroundImage: `url(${baseWindow})`, // Use the imported image
       }}
     >
       <div className="warning-header2 ">

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./EnemyVirus.css";
+import virus1 from "../assets/virus1.png";
+import virus2 from "../assets/virus2.png";
 
 const EnemyVirus: React.FC = () => {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -36,7 +38,7 @@ const EnemyVirus: React.FC = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
           >
             <motion.img
-              src={`${process.env.PUBLIC_URL}/assets/virus2.png`}
+              src={virus2}
               alt="Enemy Virus"
               className="enemy-virus"
               animate={
@@ -56,7 +58,7 @@ const EnemyVirus: React.FC = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
           >
             <motion.img
-              src={`${process.env.PUBLIC_URL}/assets/virus1.png`}
+              src={virus1}
               alt="Enemy 2"
               className="enemy2"
               animate={
@@ -76,7 +78,7 @@ const EnemyVirus: React.FC = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
           >
             <motion.img
-              src={`${process.env.PUBLIC_URL}/assets/virus1.png`}
+              src={virus1}
               alt="Enemy 3"
               className="enemy3"
               animate={

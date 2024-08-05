@@ -9,8 +9,9 @@ import WarningComponent1 from "./components/WarningComponent1";
 import WarningComponent2 from "./components/WarningComponent2";
 import Globe from "./components/Globe";
 import EnemyVirus from "./components/EnemyVirus";
+import gradientMid from "./assets/gradient-mid.png";
 
-const App = () => {
+const App: React.FC = () => {
   const [gradientOpacity, setGradientOpacity] = useState(0);
   const [startAnimation, setStartAnimation] = useState(false);
 
@@ -45,8 +46,7 @@ const App = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const imageUrl = `${process.env.PUBLIC_URL}/assets/gradient-mid.png`;
-  console.log("Image URL:", imageUrl);
+
   return (
     <div className="App">
       <div>
@@ -59,7 +59,7 @@ const App = () => {
         <hr className="horizontal-line" />
         <MiddlePage />
         <img
-          src={imageUrl}
+          src={gradientMid}
           alt="Gradient"
           className="gradient-image"
           style={{

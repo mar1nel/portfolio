@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./WarningComponent1.css";
 import OKButton from "../icons/OKButton";
 import ExitButton from "../icons/ExitButton";
+import baseWindow from "../assets/base-window.png";
 
 const WarningComponent1: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -35,10 +36,10 @@ const WarningComponent1: React.FC = () => {
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 200 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/base-window.png)`,
+        backgroundImage: `url(${baseWindow})`,
       }}
     >
-      <div className="warning-header1 ">
+      <div className="warning-header1">
         <span>Error: The page is broken! 0xR211</span>
         <motion.div
           className="close-button1 hover-target"
