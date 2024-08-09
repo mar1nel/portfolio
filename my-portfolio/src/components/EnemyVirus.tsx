@@ -41,7 +41,6 @@ const EnemyVirus: React.FC = () => {
               src={virus2}
               alt="Enemy Virus"
               className="enemy-virus"
-              loading="lazy"
               animate={
                 startAnimation
                   ? { rotate: [2, 2, -2, 2, 2], y: [16, -28, -22, 16] }
@@ -62,7 +61,6 @@ const EnemyVirus: React.FC = () => {
               src={virus1}
               alt="Enemy 2"
               className="enemy2"
-              loading="lazy" // Native lazy loading
               animate={
                 startAnimation
                   ? { rotate: [0, 2, -4, 20, -20, 7, 0], y: [0, -18, 18, 0] }
@@ -83,7 +81,6 @@ const EnemyVirus: React.FC = () => {
               src={virus1}
               alt="Enemy 3"
               className="enemy3"
-              loading="lazy" // Native lazy loading
               animate={
                 startAnimation
                   ? { rotate: [5, 15, 15, 5], y: [5, 15, 75, 5] }

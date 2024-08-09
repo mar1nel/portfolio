@@ -10,12 +10,12 @@ const AnimatedStar: React.FC = () => {
         initial={{ opacity: 1, rotate: 0, scale: 1, filter: "blur(5px)" }}
         animate={{
           rotate: 360,
-          scale: [1, 1.2, 0.9, 1],
+          scale: [1, 1.2, 0.9, 1, 0.8, 1.1],
           filter: ["blur(0px)", "blur(10px)", "blur(0px)"],
         }}
         transition={{
           repeat: Infinity,
-          duration: 20, // Adjusted duration
+          duration: 50,
           ease: "easeInOut",
         }}
       >
