@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Suspense, lazy } from "react";
 import "./App.css";
-import Preloader from "./components/Preloader"; // Import the Preloader component
+import Preloader from "./components/Preloader";
 import BorderSVG from "./components/BorderSvg";
 import Navbar from "./components/Navbar";
 import HeroComponent from "./components/HeroComponent";
@@ -9,18 +9,20 @@ import MiddlePage from "./components/MiddlePage";
 import WarningComponent1 from "./components/WarningComponent1";
 import WarningComponent2 from "./components/WarningComponent2";
 import Globe from "./components/Globe";
-import EnemyVirus from "./components/EnemyVirus";
 import gradientMid from "./assets/gradient-mid.png";
 
+// Lazy load EnemyVirus
+const EnemyVirus = lazy(() => import("./components/EnemyVirus"));
+
 const App: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true); // Loading state
+  const [isLoading, setIsLoading] = useState(true);
   const [gradientOpacity, setGradientOpacity] = useState(0);
   const [startAnimation, setStartAnimation] = useState(false);
-  // Simulate loading time or wait for all resources to load
+
   useEffect(() => {
     const fakeLoadTime = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Simulate 3 seconds of loading time
+    }, 3000);
 
     return () => clearTimeout(fakeLoadTime);
   }, []);
@@ -60,7 +62,7 @@ const App: React.FC = () => {
   return (
     <>
       {isLoading ? (
-        <Preloader /> // Show the preloader if the app is still loading
+        <Preloader />
       ) : (
         <div className="App">
           <div>
