@@ -16,8 +16,6 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true); // Loading state
   const [gradientOpacity, setGradientOpacity] = useState(0);
   const [startAnimation, setStartAnimation] = useState(false);
-  const EnemyVirus = lazy(() => import("./components/EnemyVirus"));
-
   // Simulate loading time or wait for all resources to load
   useEffect(() => {
     const fakeLoadTime = setTimeout(() => {
